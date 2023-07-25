@@ -1,16 +1,19 @@
 import React from 'react';
+import ScrollContainer from "react-indiana-drag-scroll";
 
 const Work = () => {
   return (
-    <div id='work'>
+    <section id='work'>
 			<h2>Selected work →</h2>
-			<div className='works'>
-				<div className='card'></div>
-				<div className='card'></div>
-				<div className='card'></div>
-				<div className='card card-sm'></div>
-			</div>
-		</div>
+			<ScrollContainer className='works'>
+				<div className='works-content'>
+					<div className='card'></div>
+					<div className='card'></div>
+					<div className='card'></div>
+					<div className='card card-sm'></div>
+				</div>
+			</ScrollContainer>
+		</section>
   );
 };
 
