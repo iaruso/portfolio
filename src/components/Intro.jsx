@@ -9,7 +9,7 @@ const Intro = () => {
 				<h1>I'm Yaraslau, a creative developer with a keen eye for design and passion in web development.</h1>
 			</div>
 			<div className='skills'>
-				<ReactSVG src='../assets/skills.svg' />
+				<ReactSVG src='./static/skills.svg' />
 			</div>
 		</section>
   );

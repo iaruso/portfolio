@@ -10,7 +10,12 @@ export default defineConfig({
   ],
 	root: 'src/',
 	publicDir: '../public/',
+	build: {
+    outDir: '../dist',
+    emptyOutDir: true,
+    sourcemap: false
+  },
   server: {
-    host: '0.0.0.0' // Allow connections from any device on the network
+    host: '0.0.0.0'
   }
 });

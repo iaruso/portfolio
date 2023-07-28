@@ -1,22 +1,33 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Navbar from './components/Navbar';
-import Intro from './components/Intro';
-import Work from './components/Work';
-import About from './components/About';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import ScrollToTop from "./components/ScrollToTop";
+import Main from './pages/Main';
+import CircuitRush from './pages/CircuitRush';
+import Movera from './pages/Movera';
+import Expns from './pages/Expns';
+
+const router = [
+  { path: '/', element: <Main/> },
+  { path: '/work/circuit-rush', element: <CircuitRush/> },
+  { path: '/work/movera', element: <Movera/>},
+  { path: '/work/expns', element: <Expns/> },
+	{ path: '*', element: <Main/> },
+];
 
 function App() {
   return (
-    <div className="app">
-			<Navbar />
-			<Intro />
-			<Work />
-			<About />
-			<Contact />
-			<Footer />
-    </div>
+    <Router>
+      <div className="app">
+        <ScrollToTop>
+					<Routes>
+          {router.map(({ path, element }) => (
+            <Route key={path} exact path={path} element={element} />
+          ))}
+					</Routes>
+        </ScrollToTop>
+      </div>
+    </Router>
   );
 }
 
