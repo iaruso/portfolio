@@ -10,7 +10,7 @@ const Footer = ({main}) => {
 					<li><a href='https://www.be.net/iaruso' target='_blank'>Behance</a></li>
 					<li><a href='https://www.linkedin.com/in/iaruso/' target='_blank'>LinkedIn</a></li>
 				</div>
-				<li><a>CV</a></li>
+				<li><a href='../static/Yaraslau_Maksimchyk_CV.pdf' download>CV</a></li>
       </ul>
     </footer>
   );

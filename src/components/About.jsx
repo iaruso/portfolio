@@ -20,7 +20,7 @@ const About = () => {
 					</div>
 					<a href='https://twitter.com/bruno_simon/status/1678404617539821570' target='_blank' className='details-card wall-of-fame-card'>Wall of Fame - Three.js Journey</a>
 					<a href='https://threejs-journey.com/certificate/view/28725' target='_blank' className='details-card threejs-certificate-card'>Three.js Journey Certificate</a>
-					<a className='download-cv' href='#'>
+					<a className='download-cv' href='../static/Yaraslau_Maksimchyk_CV.pdf' download>
 						CV
 						<ReactSVG className='download-cv-svg' src='./static/arrow-draw.svg'/>
 						<p className='download-cv-text'>More details there</p>
