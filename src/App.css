@@ -702,9 +702,6 @@ footer.fixed {
 	.details-card, .details-section {
 		display: none;
 	}
-	footer {
-		padding: 0.5rem;
-	}
 	footer ul {
 		width: 100%;
 		justify-content: space-between;
@@ -725,6 +722,14 @@ footer.fixed {
 	}
 	.header-link-circuit-rush {
 		display: none;
+	}
+	.work-container header .header-links a:nth-child(2) {
+		color: var(--lotion);
+		background-color: #222222;
+	}
+
+	.work-container header .header-links a:nth-child(2):hover {
+		background-color: #000000;
 	}
 }
 
@@ -790,6 +795,12 @@ footer.fixed {
 	.interactive-contact a {
 		font-size: 2rem;
 	}
+	#navbar {
+		padding-right: 0.5rem !important;
+	}
+	footer {
+		padding: 0.5rem;
+	}
 	/* Works */
 	header h2 {
 		font-size: 0.875rem;
@@ -810,6 +821,9 @@ footer.fixed {
 }
 
 @media only screen and (max-width: 400px) {
+	#navbar ul li:not(:last-child), footer ul div li {
+		margin-right: 0;
+	}
 	.download-cv-text {
 		font-size: 0.8rem;
 	}
