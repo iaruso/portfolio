@@ -1,6 +1,6 @@
 {
   "buildCommand": "vite build",
 	"rewrites":  [
-    {"source": "/(.*)", "destination": "/"}
+    {"source": "/(.*)", "destination": "/src/index.html"}
   ]
 }
