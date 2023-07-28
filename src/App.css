@@ -84,22 +84,22 @@ html, body, #root {
 	color: #222222;
 }
 
-#navbar ul, footer ul {
+#navbar ul, footer div ul {
 	display: flex;
 	list-style-type: none;
 	margin: 0rem;
 	padding: 0rem;
 }
 
-#navbar ul li, footer ul li {
+#navbar ul li, footer div ul li {
 	display: flex;
 }
 
-#navbar ul li:not(:last-child), footer ul div li {
+#navbar ul li:not(:last-child), footer div ul div li {
 	margin-right: 0.5rem;
 }
 
-#navbar ul li a, footer ul li a {
+#navbar ul li a, footer div ul li a, footer a {
 	border-radius: 0.25rem;
 	height: 1.5rem;
 	padding: 0rem 0.5rem;
@@ -110,7 +110,7 @@ html, body, #root {
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;;
 }
 
-#navbar ul li:hover a, footer ul li:hover a {
+#navbar ul li:hover a, footer div ul li:hover a, footer a:hover {
 	background-color: #F4F4F4;
 	color: #444444;
 }
@@ -440,7 +440,7 @@ footer {
 	margin-top: 1rem;
 }
 
-footer ul div {
+footer div {
 	display: flex;
 }
 
@@ -454,11 +454,11 @@ footer.dark {
 	border: 0.05rem solid black;
 }
 
-footer.dark p, footer.dark ul li a {
+footer.dark p, footer.dark div ul li a, footer.dark a{
 	color: #F4F4F4;
 }
 
-footer.dark ul li:hover a {
+footer.dark div ul li:hover a, footer.dark a:hover {
 	background-color: #333333;
 	color: #F4F4F4;
 }
@@ -468,11 +468,11 @@ footer.light {
 	border: 0.05rem solid var(--border-color);
 }
 
-footer.light p, footer.light ul li a {
+footer.light p, footer.light div ul li a, footer.light a {
 	color: #222222;
 }
 
-footer.light ul li:hover a {
+footer.light div ul li:hover a, footer.light a:hover {
 	background-color: #F4F4F4;
 	color: #444444;
 }
@@ -646,7 +646,7 @@ footer.fixed {
 	.app {
 		padding: 1rem 1rem;
 	}
-	#navbar ul li a, footer ul li a {
+	#navbar ul li a, footer div ul li a, footer a {
 		font-weight: 700;
 	}
 	section#intro {
@@ -702,7 +702,7 @@ footer.fixed {
 	.details-card, .details-section {
 		display: none;
 	}
-	footer ul {
+	footer .footer-links {
 		width: 100%;
 		justify-content: space-between;
 	}
@@ -779,7 +779,7 @@ footer.fixed {
 	footer {
 		padding: 0.5rem;
 	}
-	footer ul {
+	footer .footer-links {
 		width: 100%;
 		justify-content: space-between;
 	}
@@ -824,7 +824,7 @@ footer.fixed {
 }
 
 @media only screen and (max-width: 400px) {
-	#navbar ul li:not(:last-child), footer ul div li {
+	#navbar ul li:not(:last-child), footer div ul li {
 		margin-right: 0;
 	}
 	.download-cv-text {

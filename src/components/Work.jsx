@@ -9,13 +9,13 @@ const Work = () => {
 			<ScrollContainer className='works'>
 				<div className='works-content'>
 					<Link to="/work/circuit-rush" className='card'>
-						<img src='./static/circuit-rush-cover.png'/>
+						<img src='./static/circuit-rush-cover.png' alt='Circuit Rush Cover'/>
 					</Link>
 					<Link to="/work/movera" className='card'>
-						<img src='./static/movera-cover.png'/>
+						<img src='./static/movera-cover.png' alt='Movera Cover'/>
 					</Link>
 					<Link to="/work/expns" className='card'>
-						<img src='./static/expns-cover.png'/>
+						<img src='./static/expns-cover.png' alt='Expns Cover'/>
 					</Link>
 					<div className='card'>
 						<p>More to come ...</p>
