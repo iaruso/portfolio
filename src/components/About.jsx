@@ -9,7 +9,7 @@ const About = () => {
 				<div className='details'>
 						<div className='details-card experience-card'>Experience</div>
 						<div className='details-card experience-time-card'>More than 1 year</div>
-					<a href='https://strongstep.pt/en/' className='details-card current-job-card'>UI/UX Developer at Strongstep</a>
+					<a href='https://strongstep.pt/en/' target='_blank' className='details-card current-job-card'>UI/UX Developer at Strongstep</a>
 					<div className='details-section'>
 						<div className='details-card education-card'>Education</div>
 						<div className='details-card education-time-card'>3 years and more</div>
