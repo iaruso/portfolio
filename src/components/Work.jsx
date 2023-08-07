@@ -11,7 +11,7 @@ const Work = () => {
           <Link to="/work/circuit-rush" className="card">
             <img
               srcSet="./static/circuit-rush-cover.png 1024w,
-                      ./static/circuit-rush-min.png 768w"
+                      ./static/circuit-rush-cover-min.png 768w"
               sizes="(max-width: 768px) 768px, 1024px"
               src="./static/circuit-rush-cover.png"
               alt="Circuit Rush Cover"
@@ -20,7 +20,7 @@ const Work = () => {
           <Link to="/work/movera" className="card">
             <img
               srcSet="./static/movera-cover.png 1024w,
-                      ./static/movera-min.png 768w"
+                      ./static/movera-cover-min.png 768w"
               sizes="(max-width: 768px) 768px, 1024px"
               src="./static/movera-cover.png"
               alt="Movera Cover"
@@ -29,7 +29,7 @@ const Work = () => {
           <Link to="/work/expns" className="card">
             <img
               srcSet="./static/expns-cover.png 1024w,
-                      ./static/expns-min.png 768w"
+                      ./static/expns-cover-min.png 768w"
               sizes="(max-width: 768px) 768px, 1024px"
               src="./static/expns-cover.png"
               alt="Expns Cover"
