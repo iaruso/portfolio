@@ -12,7 +12,14 @@ export default function Expns() {
 					<Link to='/'>← Return</Link>
 					<Link to='/work/circuit-rush'>Circuit Rush →</Link>
 				</div>
-				<img src='../static/expns-cover.png' alt='Expns Cover' className='work-image'/>
+				<img
+					srcset="../static/expns-cover-min.webp 768w,
+									../static/expns-cover.webp 1024w"
+					sizes="(max-width: 768px) 768px, 1024px"
+					src="../static/expns-cover.webp"
+					alt="Expns Cover"
+					className='work-image'
+				/>
 				<header>
 					<h2>Expns</h2>
 					<div className='header-links'>
