@@ -13,7 +13,7 @@ export default function CircuitRush() {
 					<Link to='/work/movera'>Movera →</Link>
 				</div>
 					<img
-						srcset="../static/circuit-rush-cover-min.webp 768w,
+						srcSet="../static/circuit-rush-cover-min.webp 768w,
 										../static/circuit-rush-cover.webp 1024w"
 						sizes="(max-width: 768px) 768px, 1024px"
 						src="../static/circuit-rush-cover.webp"
@@ -36,7 +36,7 @@ export default function CircuitRush() {
 							<p>With a visually stunning and minimalist  design, the carefully placed checkpoints and waypoints keep you engaged at every moment.</p>
 						</div>
 						<img
-							srcset="../static/circuit-rush-image-1-min.webp 768w,
+							srcSet="../static/circuit-rush-image-1-min.webp 768w,
 											../static/circuit-rush-image-1.webp 1024w"
 							sizes="(max-width: 768px) 768px, 1024px"
 							src="../static/circuit-rush-image-1.webp"
@@ -47,7 +47,7 @@ export default function CircuitRush() {
 					<p>The integration of the Cannon physics engine make the experience a highly realistic driving sensation. Feel the impact of every acceleration, turn, collision, and auto gear system making the racing experience truly immersive.</p>
 					<section>
 						<img
-							srcset="../static/circuit-rush-image-2-min.webp 768w,
+							srcSet="../static/circuit-rush-image-2-min.webp 768w,
 											../static/circuit-rush-image-2.webp 1024w"
 							sizes="(max-width: 768px) 768px, 1024px"
 							src="../static/circuit-rush-image-2.webp"
@@ -58,7 +58,7 @@ export default function CircuitRush() {
 					</section>
 					<p>The game world is filled with cubes <span>(306 to be precise)</span> that react dynamically upon collision. As you hit these cubes, they light up in a vibrant display of color, adding an interactive and captivating element to the gameplay.</p>
 					<img
-						srcset="../static/circuit-rush-image-3-min.webp 768w,
+						srcSet="../static/circuit-rush-image-3-min.webp 768w,
 										../static/circuit-rush-image-3.webp 1024w"
 						sizes="(max-width: 768px) 768px, 1024px"
 						src="../static/circuit-rush-image-3.webp"

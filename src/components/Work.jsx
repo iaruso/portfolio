@@ -10,7 +10,7 @@ const Work = () => {
         <div className="works-content">
           <Link to="/work/circuit-rush" className="card">
             <img
-              srcset="./static/circuit-rush-cover-min.webp 768w,
+              srcSet="./static/circuit-rush-cover-min.webp 768w,
 											./static/circuit-rush-cover.webp 1024w"
               sizes="(max-width: 768px) 768px, 1024px"
               src="./static/circuit-rush-cover.webp"
@@ -19,7 +19,7 @@ const Work = () => {
           </Link>
           <Link to="/work/movera" className="card">
             <img
-              srcset="./static/movera-cover-min.webp 768w,
+              srcSet="./static/movera-cover-min.webp 768w,
 											./static/movera-cover.webp 1024w"
               sizes="(max-width: 768px) 768px, 1024px"
               src="./static/movera-cover.webp"
@@ -28,7 +28,7 @@ const Work = () => {
           </Link>
           <Link to="/work/expns" className="card">
             <img
-              srcset="./static/expns-cover-min.webp 768w,
+              srcSet="./static/expns-cover-min.webp 768w,
 											./static/expns-cover.webp 1024w"
               sizes="(max-width: 768px) 768px, 1024px"
               src="./static/expns-cover.webp"

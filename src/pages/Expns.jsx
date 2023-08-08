@@ -13,7 +13,7 @@ export default function Expns() {
 					<Link to='/work/circuit-rush'>Circuit Rush →</Link>
 				</div>
 				<img
-					srcset="../static/expns-cover-min.webp 768w,
+					srcSet="../static/expns-cover-min.webp 768w,
 									../static/expns-cover.webp 1024w"
 					sizes="(max-width: 768px) 768px, 1024px"
 					src="../static/expns-cover.webp"

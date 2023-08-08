@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'VelaSans-GX';
-  src: url('../public/VelaSans-GX.woff2') format('woff2');
+  src: local('Roboto'), url('../public/VelaSans-GX.woff2') format('woff2');
 }
 
 @font-face {
 	font-family: 'BabyDoll';
-	src: url('../public/BabyDoll.ttf');
+	src: local('Roboto'), url('../public/BabyDoll.ttf');
 }
 
 * {
