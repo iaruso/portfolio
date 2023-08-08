@@ -15,7 +15,7 @@ export default function Expns() {
 				<img
 					srcSet="../static/expns-cover-min.webp 768w,
 									../static/expns-cover.webp 1024w"
-					sizes="(max-width: 768px) 768px, 1024px"
+					sizes="(max-width: 1024px) 100vw, 1024px"
 					src="../static/expns-cover.webp"
 					alt="Expns Cover"
 					className='work-image'

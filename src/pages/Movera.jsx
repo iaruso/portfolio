@@ -15,7 +15,7 @@ export default function Movera() {
 				<img
 					srcSet="../static/movera-cover-min.webp 768w,
 									../static/movera-cover.webp 1024w"
-					sizes="(max-width: 768px) 768px, 1024px"
+					sizes="(max-width: 1024px) 100vw, 1024px"
 					src="../static/movera-cover.webp"
 					alt="Movera Cover"
 					className='work-image'
@@ -32,7 +32,7 @@ export default function Movera() {
 					<img
 						srcSet="../static/movera-image-1-min.webp 768w,
 										../static/movera-image-1.webp 1024w"
-						sizes="(max-width: 768px) 768px, 1024px"
+						sizes="(max-width: 1024px) 100vw, 1024px"
 						src="../static/movera-image-1.webp"
 						alt="Movera Image 1"
 						className='work-image'
@@ -43,7 +43,7 @@ export default function Movera() {
 						<img
 							srcSet="../static/movera-image-2-min.webp 768w,
 											../static/movera-image-2.webp 1024w"
-							sizes="(max-width: 768px) 768px, 1024px"
+							sizes="(max-width: 1024px) 100vw, 1024px"
 							src="../static/movera-image-2.webp"
 							alt="Movera Image 2"
 							className='work-image movera-image-2'
@@ -51,7 +51,7 @@ export default function Movera() {
 						<img
 							srcSet="../static/movera-image-3-min.webp 768w,
 											../static/movera-image-3.webp 1024w"
-							sizes="(max-width: 768px) 768px, 1024px"
+							sizes="(max-width: 1024px) 100vw, 1024px"
 							src="../static/movera-image-3.webp"
 							alt="Movera Image 3"
 							className='work-image'
@@ -64,7 +64,7 @@ export default function Movera() {
 						<img
 							srcSet="../static/movera-image-4-min.webp 768w,
 											../static/movera-image-4.webp 1024w"
-							sizes="(max-width: 768px) 768px, 1024px"
+							sizes="(max-width: 1024px) 100vw, 1024px"
 							src="../static/movera-image-4.webp"
 							alt="Movera Image 4"
 							className='work-image'

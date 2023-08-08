@@ -15,7 +15,7 @@ export default function CircuitRush() {
 					<img
 						srcSet="../static/circuit-rush-cover-min.webp 768w,
 										../static/circuit-rush-cover.webp 1024w"
-						sizes="(max-width: 768px) 768px, 1024px"
+						sizes="(max-width: 1024px) 100vw, 1024px"
 						src="../static/circuit-rush-cover.webp"
 						alt="Circuit Rush Cover"
 						className='work-image'
@@ -38,7 +38,7 @@ export default function CircuitRush() {
 						<img
 							srcSet="../static/circuit-rush-image-1-min.webp 768w,
 											../static/circuit-rush-image-1.webp 1024w"
-							sizes="(max-width: 768px) 768px, 1024px"
+							sizes="(max-width: 1024px) 100vw, 1024px"
 							src="../static/circuit-rush-image-1.webp"
 							alt="Circuit Rush Image 1"
 							className='work-image'
@@ -49,7 +49,7 @@ export default function CircuitRush() {
 						<img
 							srcSet="../static/circuit-rush-image-2-min.webp 768w,
 											../static/circuit-rush-image-2.webp 1024w"
-							sizes="(max-width: 768px) 768px, 1024px"
+							sizes="(max-width: 1024px) 100vw, 1024px"
 							src="../static/circuit-rush-image-2.webp"
 							alt="Circuit Rush Image 2"
 							className='work-image'
@@ -60,7 +60,7 @@ export default function CircuitRush() {
 					<img
 						srcSet="../static/circuit-rush-image-3-min.webp 768w,
 										../static/circuit-rush-image-3.webp 1024w"
-						sizes="(max-width: 768px) 768px, 1024px"
+						sizes="(max-width: 1024px) 100vw, 1024px"
 						src="../static/circuit-rush-image-3.webp"
 						alt="Circuit Rush Image 3"
 						className='work-image'
