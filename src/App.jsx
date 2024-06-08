@@ -1,34 +1,31 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './App.css';
-import ScrollToTop from "./components/ScrollToTop";
-import Main from './pages/Main';
-import CircuitRush from './pages/CircuitRush';
-import Movera from './pages/Movera';
-import Expns from './pages/Expns';
-
-const router = [
-  { path: '/', element: <Main/> },
-  { path: '/work/circuit-rush', element: <CircuitRush/> },
-  { path: '/work/movera', element: <Movera/>},
-  { path: '/work/expns', element: <Expns/> },
-	{ path: '*', element: <Main/> },
-];
+import './App.scss'
+import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
+  const { t, i18n } = useTranslation()
+
+  const handleLanguageChange = (event) => {
+    const selectedLanguage = event.target.value;
+    i18n.changeLanguage(selectedLanguage);
+  };
+
   return (
-    <Router>
-      <div className="app">
-        <ScrollToTop>
-					<Routes>
-          {router.map(({ path, element }) => (
-            <Route key={path} exact path={path} element={element} />
-          ))}
-					</Routes>
-        </ScrollToTop>
+    <>
+      <Navbar />
+      <div className='app'>
+        <select onChange={handleLanguageChange}>
+          <option value="en-US">EN</option>
+          <option value="pt-PT">PT</option>
+          <option value="ru-RU">RU</option>
+          <option value="es-ES">ES</option>
+        </select>
+        <div className='test'>
+        </div>
       </div>
-    </Router>
-  );
+    </>
+  )
 }
 
-export default App;
+export default App

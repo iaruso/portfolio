@@ -1,111 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Yaraslau - Creative developer</title>
-		<meta name="description" content="I'm Yaraslau Maksimchyk, a creative developer with a keen eye for design and passion in web development.">
-		<!-- Facebook Meta Tags -->
-		<meta property="og:url" content="https://iaruso.me">
-		<meta property="og:type" content="website">
-		<meta property="og:title" content="Yaraslau - Creative Developer">
-		<meta property="og:description" content="I'm Yaraslau Maksimchyk, a creative developer with a keen eye for design and passion in web development.">
-		<meta property="og:image" content="https://iaruso.me/static/portfolio-og.png">
-		<!-- Twitter Meta Tags -->
-		<meta name="twitter:card" content="summary_large_image">
-		<meta property="twitter:domain" content="iaruso.me">
-		<meta property="twitter:url" content="https://iaruso.me">
-		<meta name="twitter:title" content="Yaraslau - Creative Developer">
-		<meta name="twitter:description" content="I'm Yaraslau Maksimchyk, a creative developer with a keen eye for design and passion in web development.">
-		<meta name="twitter:image" content="https://iaruso.me/static/portfolio-og.png">
-		<link rel="icon" type="image/x-icon" href="temp.ico">
-		<link rel="preload" as="font" type="font/woff2" href="../public/VelaSans-GX.woff2">
-		<link rel="preload" as="font" href="../public/BabyDoll.ttf">
-    <style>
-			html {
-				font-size: calc(16px + (24 - 16) * (100vw - 1080px) / (2160 - 1080));
-			}
-      body {
-        margin: 0;
-        padding: 0;
-        background-color: white;
-        opacity: 1;
-        transition: opacity 1s ease;
-      }
-
-      body.loading {
-        opacity: 0;
-      }
-
-      #loading-square {
-				width: 2rem;
-				height: 2rem;
-				background-color: #222222;
-				border-radius: 0.5rem;
-				animation: fade 1s linear infinite 0.5s;
-				opacity: 0;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-			}
-
-			@keyframes fade {
-				from {
-					opacity: 0.2;
-				}
-				to {
-					opacity: 1;
-				}
-			}
-
-			#root {
-				opacity: 0;
-			}
-
-			#root.loaded {
-				opacity: 1;
-				transition: opacity 1s ease;
-			}
-
-      @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-      }
-    </style>
+    <title>Vite + React</title>
   </head>
   <body>
-    <div id="loading-background">
-      <div id="loading-square"></div>
-    </div>
     <div id="root"></div>
-    <script type="module" src="./main.jsx"></script>
-    <script>
-  window.addEventListener('load', () => {
-    const loadingBackground = document.getElementById('loading-background');
-    const rootContent = document.getElementById('root');
-    const startTime = performance.now(); // Record the start time
-
-    if (loadingBackground) {
-      const loadingDuration = 500; // Adjust the duration (in milliseconds) for the loading animation
-
-      // Determine if the loading duration exceeds the intended animation duration (0.6 seconds)
-      if (performance.now() - startTime >= loadingDuration) {
-        // If it's been 0.6 seconds or more since the page started loading, show the animation
-        loadingBackground.style.display = 'none';
-        document.body.classList.remove('loading');
-        setTimeout(() => {
-          rootContent.classList.add('loaded');
-        }, loadingDuration); // Use the loadingDuration as the timeout value for the animation to complete
-      } else {
-        // If it's been less than 0.6 seconds, skip the animation
-        loadingBackground.style.display = 'none';
-        document.body.classList.remove('loading');
-        rootContent.classList.add('loaded');
-      }
-    }
-  });
-</script>
-
+    <script type="module" src="/main.jsx"></script>
   </body>
 </html>
