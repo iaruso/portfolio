@@ -1,0 +1,39 @@
+nav {
+  height: calc(2rem + 2 * (var(--spacing-md)));
+  width: 100%;
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: var(--spacing-md) var(--spacing-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-color);
+
+  .logo {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+  }
+
+  ul {
+    display: flex;
+    gap: var(--spacing-xs);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  
+    li a {
+      text-decoration: none;
+      color: var(--text-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 2rem;
+      width: 2rem;
+      border-radius: var(--border-radius);
+      background-color: red;
+    }
+  }
+}

@@ -1,21 +1,23 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import viteCompression from 'vite-plugin-compression';
+import { compression } from 'vite-plugin-compression2';
+import preload from 'vite-plugin-preload';
 
 export default defineConfig({
-  base: './',
+  base: '/',
   plugins: [
     react(),
-    viteCompression()
+    compression(),
+    preload()
   ],
+  server: {
+    host: true,
+  },
 	root: 'src/',
 	publicDir: '../public/',
 	build: {
     outDir: '../dist',
     emptyOutDir: true,
     sourcemap: false
-  },
-  server: {
-    host: '0.0.0.0'
   }
 });
