@@ -1,0 +1,61 @@
+.exp-edu, .exp-edu-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+
+  .divider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--border-width);
+    height: 100%;
+    background-color: var(--border-color);
+  }
+
+  .exp-edu-item {
+    margin-left: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    position: relative;
+
+    .block {
+      position: absolute;
+      left: calc(-1 * var(--spacing-md) - 0.225rem);
+      top: 0.25rem;
+      width: 0.6rem;
+      height: 0.6rem;
+      border-radius: 0.2rem;
+      background-color: var(--border-color);
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    a {
+      font-family: 'Gilmer', 'Coolvetica', sans-serif;
+      margin: 0;
+      font-weight: 600;
+      font-size: var(--font-size-md);
+      color: var(--text-color);
+      text-decoration: none;
+    }
+
+    a:hover + .block {
+      background-color: var(--block-color);
+    }
+
+    .exp-edu-item-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--spacing-xs);
+    }
+
+    p {
+      font-size: var(--font-size-sm);
+      text-align: justify;
+      hyphens: auto;
+      -webkit-hyphens: auto;
+    }
+  }
+}
