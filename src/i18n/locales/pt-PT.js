@@ -2,7 +2,7 @@ export default {
   translations: {
     intro: {
       title: 'Yaraslau é um programador front-end com mais de 2 anos de experiência e uma paixão por design e interfaces web.',
-      subtitle: 'Natural de Grodno, residente no Porto. Fonte criativa: filmes, jogos e família.'
+      subtitle: 'Natural de Grodno, residente no Porto. Criativo através de filmes, jogos e família.'
     },
     projects: {
       title: 'Projetos',
@@ -33,8 +33,17 @@ export default {
       data_1: {
         institution: 'Escola de Media Artes e Design',
         degree: 'Licenciatura em Desenvolvimento Web',
-        period: '2019-2022',
+        period: '2019 - 2022',
         description: 'Desenvolvimento de competências em programação, prototipagem e design web. Aplicação de habilidades no desenvolvimento de produtos para criar aplicações web envolventes e conteúdo multimédia.'
+      }
+    },
+    translate: {
+      current: 'Português (PT)',
+      options: {
+        english: 'Inglês (US)',
+        portuguese: 'Português (PT)',
+        russian: 'Russo (RU)',
+        spanish: 'Espanhol (ES)'
       }
     }
   }

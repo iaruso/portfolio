@@ -4,4 +4,18 @@ section.intro {
   flex-direction: column;
   padding: var(--spacing-md) 0;
   gap: var(--spacing-sm);
+
+  h3 {
+    font-family: 'GilmerBold', 'Coolvetica', sans-serif;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.intro {
+    gap: var(--spacing-md);
+
+    h3 {
+      font-size: var(--font-size-md);
+    }
+  }
 }

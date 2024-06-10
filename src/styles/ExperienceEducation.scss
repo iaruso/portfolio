@@ -27,21 +27,39 @@
       width: 0.6rem;
       height: 0.6rem;
       border-radius: 0.2rem;
-      background-color: var(--border-color);
-      transition: background-color 0.3s ease-in-out;
+      background-color: var(--block-color);
     }
 
     a {
-      font-family: 'Gilmer', 'Coolvetica', sans-serif;
+      font-family: 'GilmerBold', 'Coolvetica', sans-serif;
       margin: 0;
       font-weight: 600;
       font-size: var(--font-size-md);
       color: var(--text-color);
       text-decoration: none;
-    }
+      display: flex;
+      align-items: end;
+      transition: color 0.3s ease-in-out;
 
-    a:hover + .block {
-      background-color: var(--block-color);
+      svg {
+        min-width: 1rem;
+        width: 1rem;
+        min-height: 1rem;
+        height: 1rem;
+        fill: var(--icon-color);
+        transition: 0.3s ease-in-out;
+        transition-property: fill, transform;
+        will-change: transform;
+      }
+
+      &:hover {
+        color: var(--link-color);
+
+        svg {
+          fill: var(--link-color);
+          transform: translate(0.05rem, -0.05rem);
+        }
+      }
     }
 
     .exp-edu-item-header {
@@ -56,6 +74,14 @@
       text-align: justify;
       hyphens: auto;
       -webkit-hyphens: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .exp-edu-item-header {
+    h4, time {
+      font-size: var(--font-size-sm);
     }
   }
 }

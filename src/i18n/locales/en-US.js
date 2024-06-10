@@ -2,7 +2,7 @@ export default {
   translations: {
     intro: {
       title: 'Yaraslau is a frontend developer with 2+ years of experience and a passion for web design and interfaces.',
-      subtitle: 'Grodno-born, Porto-based. Creative fuel: movies, games and family.'
+      subtitle: 'Grodno-born, Porto-based. Creative from movies, games and family.'
     },
     projects: {
       title: 'Projects',
@@ -33,8 +33,17 @@ export default {
       data_1: {
         institution: 'School of Media Arts and Design',
         degree: 'Degree in Web Development',
-        period: '2019-2022',
+        period: '2019 - 2022',
         description: 'Developed expertise in programming, prototyping, and web design. Applied skills across product development to create engaging web applications and multimedia content.'
+      }
+    },
+    translate: {
+      current: 'English (US)',
+      options: {
+        english: 'English (US)',
+        portuguese: 'Portuguese (PT)',
+        russian: 'Russian (RU)',
+        spanish: 'Spanish (ES)'
       }
     }
   }

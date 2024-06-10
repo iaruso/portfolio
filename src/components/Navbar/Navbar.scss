@@ -1,39 +1,77 @@
 header {
-  height: calc(2rem + 2 * (var(--spacing-md)));
   width: 100%;
-  max-width: 56rem;
-  margin: 0 auto;
-  padding: var(--spacing-md) var(--spacing-lg);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: sticky;
   top: 0;
-  background-color: var(--bg-color);
+  background-color: var(--navbar-color);
+  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
+  z-index: 1;
 
-  .logo {
+  .title {
     display: flex;
     align-items: center;
     height: 2rem;
+    font-family: 'GilmerBold', 'Coolvetica', sans-serif;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--link-color);
+    }
   }
 
-  nav ul {
+  nav {
     display: flex;
-    gap: var(--spacing-xs);
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  
-    li a {
-      text-decoration: none;
-      color: var(--text-color);
+    justify-content: space-between;
+    align-items: center;
+    height: calc(2rem + 2 * (var(--spacing-md)));
+    padding: var(--spacing-md) var(--spacing-lg);
+    width: 100%;
+    max-width: 56rem;
+    margin: 0 auto;
+
+    ul {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 2rem;
-      width: 2rem;
-      border-radius: var(--border-radius);
-      background-color: red;
+      gap: var(--spacing-xs);
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    
+      li a, li button {
+        text-decoration: none;
+        color: var(--text-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2rem;
+        width: 2rem;
+        border-radius: var(--border-radius);
+        transition: background-color 0.3s ease-in-out;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        svg, svg path {
+          fill: var(--icon-color);
+          min-width: 1.25rem;
+          width: 1.25rem;
+          min-height: 1.25rem;
+          height: 1.25rem;
+        }
+
+        &:hover {
+          background-color: var(--button-hover-bg-color);
+        }
+      }
+
+      li button svg {
+        transition: transform 0.3s ease-in-out;
+        will-change: transform;
+      }
+      
+      li button:hover svg {
+        transform: rotate(-15deg);
+      }
     }
   }
 }

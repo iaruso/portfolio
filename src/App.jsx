@@ -1,22 +1,43 @@
 import './App.scss'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
+import { Helmet, HelmetProvider } from 'react-helmet-async'
+import gsap from 'gsap'
 import Navbar from './components/Navbar/Navbar'
 import Intro from './components/Intro/Intro'
 import Projects from './components/Projects/Projects'
 import Info from './components/Info/Info'
+import Footer from './components/Footer.jsx/Footer'
 
 function App() {
-  const { t, i18n } = useTranslation()
+  const { t, i18n } = useTranslation();
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    localStorage.setItem('theme', newTheme);
+    setTheme(newTheme);
+  };
 
   const handleLanguageChange = (event) => {
     const selectedLanguage = event.target.value;
     i18n.changeLanguage(selectedLanguage);
   };
 
+  useEffect(() => {
+    gsap.fromTo('.opacity-box', { opacity: 2}, { opacity: 0, duration: 1 });
+  }, [i18n.language, theme]);
+
   return (
     <>
-      <Navbar />
+      <HelmetProvider>
+        <Helmet>
+          <html lang={i18n.language.split('-')[0]} data-color-scheme={theme}></html>
+          <meta name='theme-color' content={theme === 'light' ? '#ffffff' : '#121212'} />
+        </Helmet>
+      </HelmetProvider>
+      <div className='opacity-box'></div>
+      <Navbar toggleTheme={toggleTheme} theme={theme || ''} />
       <main className='app'>
         <Intro />
         <div className='app-content'>
@@ -24,12 +45,7 @@ function App() {
           <Info />
         </div>
       </main>
-      <select onChange={handleLanguageChange}>
-          <option value="en-US">EN</option>
-          <option value="pt-PT">PT</option>
-          <option value="ru-RU">RU</option>
-          <option value="es-ES">ES</option>
-        </select>
+      <Footer handleLanguageChange={handleLanguageChange} />
     </>
   )
 }

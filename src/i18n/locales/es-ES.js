@@ -2,7 +2,7 @@ export default {
   translations: {
     intro: {
       title: 'Yaraslau es un desarrollador frontend con más de 2 años de experiencia y una pasión por el diseño web y las interfaces.',
-      subtitle: 'Nacido en Grodno, residente en Oporto. Fuente creativa: películas, juegos y familia.'
+      subtitle: 'Nacido en Grodno, residente en Oporto. Creativo a partir del cine, los juegos y la familia.'
     },
     projects: {
       title: 'Proyectos',
@@ -33,8 +33,17 @@ export default {
       data_1: {
         institution: 'Escuela de Artes y Diseño de Medios',
         degree: 'Grado en Desarrollo Web',
-        period: '2019-2022',
+        period: '2019 - 2022',
         description: 'Desarrolló experiencia en programación, prototipado y diseño web. Aplicó habilidades en el desarrollo de productos para crear aplicaciones web atractivas y contenido multimedia.'
+      }
+    },
+    translate: {
+      current: 'Español (ES)',
+      options: {
+        english: 'Inglés (US)',
+        portuguese: 'Portugués (PT)',
+        russian: 'Ruso (RU)',
+        spanish: 'Español (ES)'
       }
     }
   }

@@ -17,6 +17,7 @@
     "react-dom": "^18.2.0",
     "react-helmet-async": "^2.0.5",
     "react-i18next": "^14.1.2",
+    "react-scroll": "^1.9.0",
     "vite-plugin-compression2": "^1.1.1",
     "vite-plugin-preload": "^0.4.0"
   },

@@ -1,0 +1,123 @@
+.technologies {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+
+  .technologies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    
+    .technologies-item {
+      flex: 1;
+      min-width: 2rem;
+      height: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--border-radius);
+      transition: background-color 0.3s ease-in-out;
+      cursor: help;
+
+      svg {
+        min-width: 1.25rem;
+        width: 1.25rem;
+        min-height: 1.25rem;
+        height: 1.25rem;
+      }
+    }
+  }
+}
+
+div#root.dark {
+  .three-js svg, .three-js path, .express-js svg, .express-js path, .vercel svg, .vercel path {
+    fill: var(--icon-color);
+  }
+
+  .technologies-item:hover {
+    &.three-js, &.express-js, &.vercel, &.notion, &.figma { 
+      background-color: #FFFFFF1A;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .technologies-item {
+    background-color: var(--box-bg-color);
+    
+    svg, path {
+      transition: fill 0.3s ease-in-out;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease-in-out;
+    }
+
+    &.rails svg, &.rails path {
+      filter: grayscale(100%) brightness(1.5);
+    }
+
+    &.vercel svg, &.vercel path {
+      filter: grayscale(100%) brightness(2);
+    }
+
+    &:hover {
+      svg, path {
+        filter: grayscale(0%) brightness(1);
+      }
+      &.react { background-color: #00D8FF1A; }
+      &.rails { background-color: #C600001A; }
+      &.angular { background-color: #E61E971A; }
+      &.javascript { background-color: #E8D44D1A; }
+      &.typescript { background-color: #2F74C01A; }
+      &.jquery { background-color: #1163A41A; }
+      &.three-js { background-color: #0000001A; }
+      &.mongodb { background-color: #01EC641A; }
+      &.express-js { background-color: #0000001A; }
+      &.node-js { background-color: #66B8481A; }
+      &.git { background-color: #DE4C361A; }
+      &.vite { background-color: #7392FF1A; }
+      &.vercel { background-color: #0000001A; }
+      &.tailwind-css { background-color: #38BDF81A; }
+      &.sass { background-color: #CF649A1A; }
+      &.vscode { background-color: #1F9CF01A; }
+      &.sublime { background-color: #FF98001A; }
+      &.notion { background-color: #0000001A; }
+      &.figma { background-color: #0000001A; }
+      &.adobe { background-color: #DB262D1A; }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .technologies-item {
+    &.rails svg, &.rails path {
+      filter: grayscale(0%) brightness(1.5);
+    }
+
+    & {
+      svg, path {
+        filter: grayscale(0%) brightness(1);
+      }
+      &.react { background-color: #00D8FF1A; }
+      &.rails { background-color: #C600001A; }
+      &.angular { background-color: #E61E971A; }
+      &.javascript { background-color: #E8D44D1A; }
+      &.typescript { background-color: #2F74C01A; }
+      &.jquery { background-color: #1163A41A; }
+      &.three-js { background-color: #0000001A; }
+      &.mongodb { background-color: #01EC641A; }
+      &.express-js { background-color: #0000001A; }
+      &.node-js { background-color: #66B8481A; }
+      &.git { background-color: #DE4C361A; }
+      &.vite { background-color: #7392FF1A; }
+      &.vercel { background-color: #0000001A; }
+      &.tailwind-css { background-color: #38BDF81A; }
+      &.sass { background-color: #CF649A1A; }
+      &.vscode { background-color: #1F9CF01A; }
+      &.sublime { background-color: #FF98001A; }
+      &.notion { background-color: #0000001A; }
+      &.figma { background-color: #0000001A; }
+      &.adobe { background-color: #DB262D1A; }
+    }
+  }
+}
