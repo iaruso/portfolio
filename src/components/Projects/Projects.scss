@@ -164,6 +164,11 @@ section.projects {
         }
       }
 
+      .project-description {
+        position: relative;
+        z-index: 2;
+      }
+
       .project-item-tech {
         position: relative;
         z-index: 2;

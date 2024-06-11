@@ -6,8 +6,8 @@ import ProjectItem from '../ProjectItem/ProjectItem';
 const Projects = () => {
   const { t } = useTranslation();
   const theme = localStorage.getItem('theme') || 'light';
-  let color = theme === 'dark' ? '121, 121, 121, 0.1' : '201, 201, 201, 0.05';
-  let intensity = theme === 'dark' ? '40rem' : '50rem';
+  let color = theme === 'dark' ? '121, 121, 121, 0.1' : '250, 250, 250, 0.5';
+  let intensity = theme === 'dark' ? '40rem' : '30rem';
 
   const projects = [
     {

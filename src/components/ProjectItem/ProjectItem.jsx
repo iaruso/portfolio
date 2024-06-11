@@ -60,7 +60,7 @@ const ProjectItem = ({ theme, imageUrlDark, imageUrlLight, projectName, projectL
           </a>
         )}
       </div>
-      <p>{description}</p>
+      <p className='project-description'>{description}</p>
       <div className='project-item-tech'>
         {techStack.map((tech, index) => (
           <span key={index}>{tech}</span>
