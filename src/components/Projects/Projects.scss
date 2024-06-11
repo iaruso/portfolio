@@ -199,6 +199,12 @@ section.projects {
   }
 }
 
+div#root.light {
+  .github-link:hover {
+    background-color: #AAAAAA1A !important;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .project-item-tech span {
     font-size: var(--font-size-xs);
