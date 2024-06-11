@@ -9,7 +9,8 @@ footer {
   gap: var(--spacing-md);
 
   p {
-    font-family: 'GilmerBold', 'Coolvetica', sans-serif;
+    font-family: 'GilmerMedium', 'Inter Tight', sans-serif;
+    font-weight: 600;
     color: var(--footer-color);
   }
 
@@ -23,14 +24,14 @@ footer {
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      padding: var(--spacing-xs) var(--spacing-md);
+      padding: var(--spacing-xs) var(--spacing-sm);
       height: 2rem;
       border: var(--border-width-sm) solid var(--border-color);
       border-radius: var(--border-radius);
       background-color: var(--bg-color);
-      font-family: 'GilmerBold', 'Coolvetica', sans-serif;
+      font-family: 'GilmerMedium', 'Inter Tight', sans-serif;
       font-size: var(--font-size-md);
-      font-weight: 600;
+      font-weight: 500;
       color: var(--footer-color);
       transition: background-color 0.3s ease-in-out;
 
@@ -50,11 +51,11 @@ footer {
       width: max-content;
 
       .language-option {
-        font-family: 'GilmerBold', 'Coolvetica', sans-serif;
+        font-family: 'GilmerMedium', 'Inter Tight', sans-serif;
         font-size: var(--font-size-md);
-        font-weight: 600;
+        font-weight: 500;
         color: var(--footer-color);
-        padding: var(--spacing-xs) var(--spacing-md);
+        padding: var(--spacing-xs) var(--spacing-sm);
         height: 2rem;
         display: flex;
         align-items: center;

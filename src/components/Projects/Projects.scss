@@ -210,3 +210,9 @@ div#root.light {
     font-size: var(--font-size-xs);
   }
 }
+
+@media screen and (max-width: 480px) {
+  .project-item-bg {
+    opacity: 0 !important;
+  }
+}

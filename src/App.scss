@@ -7,6 +7,14 @@
 }
 
 @font-face {
+  font-family: 'GilmerMedium';
+  src: url('../public/GilmerMedium.woff2') format('woff2'),
+       url('../public/GilmerMedium.woff') format('woff'),
+       url('../public/GilmerMedium.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
   font-family: 'Coolvetica';
   src: url('../public/Coolvetica.woff2') format('woff2'),
        url('../public/Coolvetica.woff') format('woff'),
@@ -75,6 +83,8 @@ div#root.light {
   --box-bg-color: var(--light-100);
   --button-hover-bg-color: var(--light-100);
   --button-active-bg-color: var(--light-200);
+
+  --scroll-thumb-color: var(--light-400);
 }
 
 div#root.dark {
@@ -95,6 +105,8 @@ div#root.dark {
   --box-bg-color: var(--dark-200);
   --button-hover-bg-color: var(--dark-200);
   --button-active-bg-color: var(--dark-300);
+
+  --scroll-thumb-color: var(--dark-400);
 }
 
 * {
@@ -195,11 +207,46 @@ time {
   margin: 0;
 }
 
+/* Scrollbar styles */
+/* WebKit (Chrome, Safari, etc.) */
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+}
 
+/* Firefox */
+* {
+  scrollbar-color: var(--scroll-thumb-color) var(--bg-color);
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+[data-color-scheme="dark"] {
+  color-scheme: dark;
+}
+
+[data-color-scheme="light"] {
+  color-scheme: light;
+}
 
 @media (prefers-reduced-motion: reduce) {
   #root * {
     transition: none !important;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  ::-webkit-scrollbar-thumb {
+    display: none;
+  }
+
+  * {
+    scrollbar-color: transparent transparent;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
   }
 }
 
