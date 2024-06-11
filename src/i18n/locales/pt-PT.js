@@ -1,12 +1,13 @@
 export default {
   translations: {
     app: 'Yaraslau Maksimchyk - Desenvolvedor Frontend',
+    description: 'Desenvolvedor frontend com mais de 2 anos de experiência e uma paixão por design e interfaces web.',
     accessibility: {
       toggle_theme: 'Mudar tema',
       source_code: 'Código fonte',
     },
     intro: {
-      title: 'Yaraslau é um programador front-end com mais de 2 anos de experiência e uma paixão por design e interfaces web.',
+      title: 'Yaraslau é um desenvolvedor frontend com mais de 2 anos de experiência e uma paixão por design e interfaces web.',
       subtitle: 'Natural de Grodno, residente no Porto. Criativo através de filmes, jogos e família.'
     },
     projects: {

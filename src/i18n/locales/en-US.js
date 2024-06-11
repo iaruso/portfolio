@@ -1,6 +1,7 @@
 export default {
   translations: {
     app: 'Yaraslau Maksimchyk - Frontend Developer',
+    description: 'Frontend developer with 2+ years of experience and a passion for web design and interfaces.',
     accessibility: {
       toggle_theme: 'Toggle theme',
       source_code: 'Source code',

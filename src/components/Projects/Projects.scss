@@ -20,6 +20,12 @@ section.projects {
       background-color: var(--bg-color);
       border: var(--border-width-sm) solid var(--border-color);
       padding: var(--spacing-md);
+      position: relative;
+
+      .project-item-bg {
+        position: absolute;
+        inset: -1px;
+      }
 
       .project-item-header {
         display: flex;

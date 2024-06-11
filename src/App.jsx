@@ -36,6 +36,7 @@ function App() {
           <link rel='icon' type='image/svg+xml' href={theme == 'light' ? '/favicon-light.svg' : '/favicon-dark.svg'} />
           <meta name='theme-color' content={theme === 'light' ? '#ffffff' : '#121212'} />
           <title>{t('app')}</title>
+          <meta name='description' content={t('description')} />
         </Helmet>
       </HelmetProvider>
       <div className='opacity-box'></div>

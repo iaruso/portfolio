@@ -1,6 +1,7 @@
 export default {
   translations: {
     app: 'Yaraslau Maksimchyk - Desarrollador Frontend',
+    description: 'Desarrollador frontend con más de 2 años de experiencia y una pasión por el diseño web y las interfaces.',
     accessibility: {
       toggle_theme: 'Alternar tema',
       source_code: 'Código fuente',

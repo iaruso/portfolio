@@ -11,6 +11,7 @@ const Projects = () => {
       <h2>{t('projects.title')}</h2>
       <div className='projects-container'>
         <div className='project-item'>
+          <div className='project-item-bg'></div>
           <div className='project-item-header'>
             <img src={theme == 'dark' ? './circuit-rush-dark.svg' : './circuit-rush-light.svg'} alt='Circuit Rush'></img>
             <a className='project-name' href='https://circuit-rush.vercel.app/' target='_blank'>Circuit Rush<Icon name='Link' /></a>
@@ -26,6 +27,7 @@ const Projects = () => {
           </div>
         </div>
         <div className='project-item'>
+        <div className='project-item-bg'></div>
           <div className='project-item-header'>
             <img src={theme == 'dark' ? './globus-dark.svg' : './globus-light.svg'} alt='Globus'></img>
             <a className='project-name' href='https://globus-three-js.vercel.app/' target='_blank'>Globus<Icon name='Link' /></a>
@@ -40,6 +42,7 @@ const Projects = () => {
           </div>
         </div>
         <div className='project-item'>
+          <div className='project-item-bg'></div>
           <div className='project-item-header'>
             <img src={theme == 'dark' ? './expns-dark.svg' : './expns-light.svg'} alt='Expns'></img>
             <a className='project-name' href='https://expns.vercel.app/' target='_blank'>Expns<Icon name='Link' /></a>
@@ -55,6 +58,7 @@ const Projects = () => {
           </div>
         </div>
         <div className='project-item'>
+          <div className='project-item-bg'></div>
           <div className='project-item-header'>
             <img src={theme == 'dark' ? './codio-dark.svg' : './codio-light.svg'} alt='Cōdio'></img>
             <a className='project-name' href='https://codio-agency.vercel.app/' target='_blank'>Cōdio<Icon name='Link' /></a>
@@ -68,6 +72,7 @@ const Projects = () => {
           </div>
         </div>
         <div className='project-item'>
+          <div className='project-item-bg'></div>
           <div className='project-item-header'>
             <img src={theme == 'dark' ? './rorushi-dark.svg' : './rorushi-light.svg'} alt='Rorushi'></img>
             <a className='project-name' href='https://rorushi.vercel.app/' target='_blank'>Rorushi<Icon name='Link' /></a>
@@ -81,6 +86,7 @@ const Projects = () => {
           </div>
         </div>
         <div className='project-item'>
+          <div className='project-item-bg'></div>
           <div className='project-item-header'>
             <img src={theme == 'dark' ? './movera-dark.svg' : './movera-light.svg'} alt='Movera'></img>
             <a className='project-name' href='https://iaruso.notion.site/Movera-0c2af3bf483d40438aa77bccf7334ac3' target='_blank'>Movera<Icon name='Link' /></a>
