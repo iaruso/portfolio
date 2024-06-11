@@ -1,11 +1,11 @@
-import englishTranslations from './en-US'
-import portugueseTranslations from './pt-PT'
-import russianTranslations from './ru-RU'
-import spanishTranslations from './es-ES'
+import englishTranslations from './en'
+import portugueseTranslations from './pt'
+import russianTranslations from './ru'
+import spanishTranslations from './es'
 
 export default {
-  'en-US': englishTranslations,
-  'pt-PT': portugueseTranslations,
-  'ru-RU': russianTranslations,
-  'es-ES': spanishTranslations
+  'en': englishTranslations,
+  'pt': portugueseTranslations,
+  'ru': russianTranslations,
+  'es': spanishTranslations
 }

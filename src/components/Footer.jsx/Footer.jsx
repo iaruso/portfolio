@@ -8,10 +8,10 @@ const Footer = ({ handleLanguageChange }) => {
   const dropdownRef = useRef(null);
 
   const languages = [
-    { code: 'en-US', label: 'translate.options.english' },
-    { code: 'pt-PT', label: 'translate.options.portuguese' },
-    { code: 'ru-RU', label: 'translate.options.russian' },
-    { code: 'es-ES', label: 'translate.options.spanish' },
+    { code: 'en', label: 'translate.options.english' },
+    { code: 'pt', label: 'translate.options.portuguese' },
+    { code: 'ru', label: 'translate.options.russian' },
+    { code: 'es', label: 'translate.options.spanish' },
   ];
 
   const toggleDropdown = () => {
