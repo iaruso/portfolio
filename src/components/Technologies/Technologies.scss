@@ -48,18 +48,15 @@ div#root.dark {
     
     svg, path {
       transition: fill 0.3s ease-in-out;
-      filter: grayscale(100%);
+
       transition: filter 0.3s ease-in-out;
     }
 
     &.rails svg, &.rails path {
-      filter: grayscale(100%) brightness(1.5);
+      filter: brightness(0.95);
     }
 
     &:hover {
-      svg, path {
-        filter: grayscale(0%) brightness(1);
-      }
       &.react { background-color: #00D8FF1A; }
       &.rails { background-color: #C600001A; }
       &.angular { background-color: #E61E971A; }
@@ -120,7 +117,7 @@ div#root.dark {
   div#root.dark {
     .technologies-item {
       &.three-js, &.express-js, &.vercel, &.notion, &.figma { 
-        background-color: #FFFFFF1A;
+        background-color: #FFFFFF0A !important;
       }
     }
   }

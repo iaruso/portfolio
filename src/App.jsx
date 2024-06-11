@@ -31,7 +31,7 @@ function App() {
   };
 
   useEffect(() => {
-    gsap.fromTo('.opacity-box', { opacity: 2}, { opacity: 0, duration: 0.3 });
+    gsap.fromTo('.opacity-box', { opacity: 2}, { opacity: 0, duration: 0.6 });
   }, [i18n.language, theme]);
 
   return (

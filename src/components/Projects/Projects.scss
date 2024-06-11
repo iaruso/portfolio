@@ -23,16 +23,65 @@ section.projects {
       position: relative;
       overflow: hidden;
 
-      &:hover {
-        .project-item-bg {
-          opacity: 1;
-        }
-      }
+      // &:hover {
+      //   .project-item-bg {
+      //     opacity: 0.6;
+      //   }
+      // }
+
+      // &.circuit:hover {
+      //   & span{
+      //     border-color: #E555551A !important;
+      //   }
+      //   border-color: #E555551A !important;
+      // }
+
+      // &.globus:hover {
+      //   & span{
+      //     border-color: #6060601A !important;
+      //   }
+      //   border-color: #6060601A !important;
+      // }
+
+      // &.expns:hover {
+      //   & span{
+      //     border-color: #3A4AD91A !important;
+      //   }
+      //   border-color: #3A4AD91A !important;
+      // }
+
+      // &.cōdio:hover {
+      //   & span{
+      //     border-color: #B4B4B41A !important;
+      //   }
+      //   border-color: #B4B4B41A !important
+      // }
+
+      // &.rorushi:hover {
+      //   & span{
+      //     border-color: #F5640B1A !important;
+      //   }
+      //   border-color: #F5640B1A !important;
+      // }
+
+      // &.movera:hover {
+      //   & span{
+      //     border-color: #C5F7851A !important;
+      //     background-color: transparent;
+      //   }
+      //   border-color: #C5F7851A !important;
+      // }
 
       .project-item-bg {
         position: absolute;
         inset: -1px;
         pointer-events: none;
+      }
+
+      .project-item-bg:has(~ .project-item-header a.project-name:hover),
+      .project-item-bg:has(~ .project-item-header .award-link:hover),
+      .project-item-bg:has(~ .project-item-header .github-link:hover) {
+        opacity: 1 !important;
       }
 
       .project-item-header {
@@ -90,15 +139,31 @@ section.projects {
 
         svg  {
           fill: var(--icon-color);
-          width: 1.25rem;
-          height: 1.25rem;
-          transition: fill 0.3s ease-in-out;
+          width: 1rem;
+          height: 1rem;
+        }
 
-          &:hover {
-            fill: var(--link-color);
-          }
+        .award-link, .github-link {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 1.5rem;
+          height: 1.5rem;
+          border-radius: var(--border-radius);
+          transition: background-color 0.3s ease-in-out;
+          cursor: pointer;
+        }
+
+        .award-link:hover {
+          background-color: #705DF21A;
+        }
+        
+
+        .github-link:hover {
+          background-color: #FFFFFF1A;
         }
       }
+
       .project-item-tech {
         position: relative;
         z-index: 2;

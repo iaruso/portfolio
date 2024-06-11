@@ -6,6 +6,8 @@ import ProjectItem from '../ProjectItem/ProjectItem';
 const Projects = () => {
   const { t } = useTranslation();
   const theme = localStorage.getItem('theme') || 'light';
+  let color = theme === 'dark' ? '121, 121, 121, 0.1' : '201, 201, 201, 0.05';
+  let intensity = theme === 'dark' ? '40rem' : '50rem';
 
   const projects = [
     {
@@ -16,7 +18,9 @@ const Projects = () => {
       githubLink: 'https://github.com/iaruso/circuit-rush',
       description: t('projects.circuit_rush.description'),
       techStack: ['React', 'Three.js', 'MongoDB', 'Express.js', 'Node.js'],
-      accessibilityLabel: t('accessibility.source_code')
+      accessibilityLabel: t('accessibility.source_code'),
+      //rgba: '229, 85, 85, 0.1'
+      rgba: color
     },
     {
       imageUrlDark: './globus-dark.svg',
@@ -26,7 +30,9 @@ const Projects = () => {
       githubLink: 'https://github.com/iaruso/globus',
       description: t('projects.globus.description'),
       techStack: ['React', 'Three.js', 'JavaScript', 'CSS'],
-      accessibilityLabel: t('accessibility.source_code')
+      accessibilityLabel: t('accessibility.source_code'),
+      //rgba: '96, 96, 96, 0.1'
+      rgba: color
     },
     {
       imageUrlDark: './expns-dark.svg',
@@ -36,7 +42,9 @@ const Projects = () => {
       githubLink: 'https://github.com/iaruso/expns',
       description: t('projects.expns.description'),
       techStack: ['React', 'Tailwind', 'MongoDB', 'Express.js', 'Node.js'],
-      accessibilityLabel: t('accessibility.source_code')
+      accessibilityLabel: t('accessibility.source_code'),
+      //rgba: '58, 74, 217, 0.1'
+      rgba: color
     },
     {
       imageUrlDark: './codio-dark.svg',
@@ -46,7 +54,8 @@ const Projects = () => {
       githubLink: 'https://github.com/iaruso/codio',
       description: t('projects.codio.description'),
       techStack: ['React', 'TypeScript', 'CSS'],
-      accessibilityLabel: t('accessibility.source_code')
+      accessibilityLabel: t('accessibility.source_code'),
+      rgba: color
     },
     {
       imageUrlDark: './rorushi-dark.svg',
@@ -56,7 +65,9 @@ const Projects = () => {
       githubLink: 'https://github.com/iaruso/rorushi',
       description: t('projects.rorushi.description'),
       techStack: ['React', 'Javascript', 'CSS'],
-      accessibilityLabel: t('accessibility.source_code')
+      accessibilityLabel: t('accessibility.source_code'),
+      //rgba: '245, 100, 11, 0.1'
+      rgba: color
     },
     {
       imageUrlDark: './movera-dark.svg',
@@ -66,7 +77,9 @@ const Projects = () => {
       githubLink: null,
       description: t('projects.movera.description'),
       techStack: ['Figma', 'Adobe CC'],
-      accessibilityLabel: null
+      accessibilityLabel: null,
+      //rgba: '197, 247, 133, 0.1'
+      rgba: color
     }
   ];
 
@@ -86,6 +99,8 @@ const Projects = () => {
             description={project.description}
             techStack={project.techStack}
             accessibilityLabel={project.accessibilityLabel}
+            rgba={project.rgba}
+            intensity={intensity}
           />
         ))}
       </div>

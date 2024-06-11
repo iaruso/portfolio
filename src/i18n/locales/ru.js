@@ -13,6 +13,7 @@ export default {
     projects: {
       title: 'Проекты',
       circuit_rush: {
+        award: 'Премия Three.js Journey Selection',
         description: 'Минималистическая адреналиновая гоночная игра.',
       },
       globus: {

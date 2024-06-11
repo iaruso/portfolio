@@ -1,8 +1,10 @@
 import React, { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import gsap from 'gsap';
 import Icon from '../icons/Icon';
 
-const ProjectItem = ({ theme, imageUrlDark, imageUrlLight, projectName, projectLink, githubLink, description, techStack, accessibilityLabel }) => {
+const ProjectItem = ({ theme, imageUrlDark, imageUrlLight, projectName, projectLink, githubLink, description, techStack, accessibilityLabel, rgba, intensity }) => {
+  const { t } = useTranslation();
   const bgRef = useRef(null);
 
   const handleMouseMove = (e) => {
@@ -11,8 +13,8 @@ const ProjectItem = ({ theme, imageUrlDark, imageUrlLight, projectName, projectL
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
       gsap.to(bgRef.current, {
-        opacity: 1,
-        background: `radial-gradient(40rem circle at ${x}px ${y}px, rgba(96, 96, 96, 0.1), transparent 66%)`,
+        opacity: 0.9,
+        background: `radial-gradient(${intensity} circle at ${x}px ${y}px, rgba(${rgba}), transparent 66%)`,
         duration: 0.3,
       });
     }
@@ -22,7 +24,7 @@ const ProjectItem = ({ theme, imageUrlDark, imageUrlLight, projectName, projectL
     if (e.pointerType === 'mouse' || e.pointerType === '') {
       gsap.to(bgRef.current, {
         opacity: 0,
-        background: 'radial-gradient(40rem circle at 0px 0px, rgba(96, 96, 96, 0.1), transparent 66%)',
+        background: `radial-gradient(${intensity} circle at 0px 0px, rgba(${rgba}), transparent 66%)`,
         duration: 0.3,
       });
     }
@@ -30,7 +32,7 @@ const ProjectItem = ({ theme, imageUrlDark, imageUrlLight, projectName, projectL
 
   return (
     <div
-      className='project-item'
+      className={`project-item ${projectName.split(' ')[0].toLowerCase()}`}
       onPointerMove={handleMouseMove}
       onPointerLeave={handleMouseLeave}
     >
@@ -39,7 +41,7 @@ const ProjectItem = ({ theme, imageUrlDark, imageUrlLight, projectName, projectL
         ref={bgRef}
         style={{
           opacity: 0,
-          background: 'radial-gradient(40rem circle at 0px 0px, rgba(96, 96, 96, 0.1), transparent 66%)',
+          background: `radial-gradient(${intensity} circle at 0px 0px, rgba(${rgba}), transparent 66%)`,
         }}
       ></div>
       <div className='project-item-header'>
@@ -47,8 +49,13 @@ const ProjectItem = ({ theme, imageUrlDark, imageUrlLight, projectName, projectL
         <a className='project-name' href={projectLink} target='_blank' rel='noopener noreferrer'>
           {projectName}<Icon name='Link' />
         </a>
+        {projectName === 'Circuit Rush' && (
+          <a className='award-link' href='https://threejs-journey.com/selection/4' target='_blank' rel='noopener noreferrer' title={t('projects.circuit_rush.award')}>
+            <Icon name='Award' />
+          </a>
+        )}
         {githubLink && (
-          <a href={githubLink} target='_blank' rel='noopener noreferrer' aria-label={accessibilityLabel}>
+          <a className='github-link' href={githubLink} target='_blank' rel='noopener noreferrer' aria-label={accessibilityLabel}>
             <Icon name='Github' />
           </a>
         )}
