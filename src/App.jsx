@@ -13,6 +13,16 @@ function App() {
   const { t, i18n } = useTranslation();
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
 
+  useEffect(() => {
+    if (!theme) {
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        setTheme('dark');
+      } else {
+        setTheme('light');
+      }
+    }
+  }, []);
+
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     localStorage.setItem('theme', newTheme);
