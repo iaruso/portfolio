@@ -11,17 +11,13 @@ import Footer from './components/Footer.jsx/Footer'
 
 function App() {
   const { t, i18n } = useTranslation();
-  const [theme, setTheme] = useState(localStorage.getItem('theme'));
-
-  useEffect(() => {
-    if (!theme) {
-      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        setTheme('dark');
-      } else {
-        setTheme('light');
-      }
+  const [theme, setTheme] = useState(() => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      return savedTheme;
     }
-  }, []);
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light';
+  });
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
