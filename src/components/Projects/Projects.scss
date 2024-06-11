@@ -214,5 +214,6 @@ div#root.light {
 @media screen and (max-width: 480px) {
   .project-item-bg {
     opacity: 0 !important;
+    background: none !important;
   }
 }
