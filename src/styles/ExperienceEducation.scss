@@ -71,10 +71,12 @@
 
     time  {
       width: fit-content;
+      font-size: var(--font-size-md);
+      font-family: 'GilmerBold', 'Coolvetica', sans-serif;
     }
 
     p.title {
-      font-family: Inter Tight, sans-serif;
+      font-family: 'GilmerBold', 'Coolvetica', sans-serif;
       margin: 0;
       font-weight: 600;
       font-size: var(--font-size-md);
@@ -91,14 +93,22 @@
       text-align: justify;
       hyphens: auto;
       -webkit-hyphens: auto;
+      line-height: 1.25rem;
     }
   }
 }
 
+div#root.dark {
+  p.description {
+    font-weight: 500;
+  }
+}
+
 @media screen and (max-width: 768px) {
-  .exp-edu-item-header {
-    h4, time {
-      font-size: var(--font-size-sm);
+  .exp-edu-item {
+    time, p.title {
+      font-size: var(--font-size-sm) !important;
+      font-family: 'Inter Tight', sans-serif !important;
     }
   }
 }
