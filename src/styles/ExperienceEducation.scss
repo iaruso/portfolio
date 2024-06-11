@@ -69,15 +69,24 @@
       gap: var(--spacing-xs);
     }
 
-    title {
+    time  {
+      width: fit-content;
+    }
+
+    p.title {
       font-family: Inter Tight, sans-serif;
       margin: 0;
       font-weight: 600;
       font-size: var(--font-size-md);
       color: var(--details-color);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 0;
+      flex: 1;
     }
 
-    p {
+    p.description {
       font-size: var(--font-size-sm);
       text-align: justify;
       hyphens: auto;

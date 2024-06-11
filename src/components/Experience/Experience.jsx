@@ -14,15 +14,15 @@ const Experience = () => {
           <a href='https://strongstep.pt/en/' target='_blank'>{t('experience.data_2.company')}<Icon name='Link' /></a>
           <div className='block'></div>
           <div className='exp-edu-item-header'>
-            <title>{t('experience.data_2.position')}</title>
+            <p className='title'>{t('experience.data_2.position')}</p>
             <time>{t('experience.data_2.period')}</time>
           </div>
-          <p>{t('experience.data_2.description')}</p>
+          <p className='description'>{t('experience.data_2.description')}</p>
           <div className='exp-edu-item-header'>
-            <title>{t('experience.data_1.position')}</title>
+            <p className='title'>{t('experience.data_1.position')}</p>
             <time>{t('experience.data_1.period')}</time>
           </div>
-          <p>{t('experience.data_1.description')}</p>
+          <p className='description'>{t('experience.data_1.description')}</p>
         </div>
       </div>
     </div>
