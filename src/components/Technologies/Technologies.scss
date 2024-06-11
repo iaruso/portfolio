@@ -31,7 +31,7 @@
 }
 
 div#root.dark {
-  .three-js svg, .three-js path, .express-js svg, .express-js path, .vercel svg, .vercel path {
+  .three-js svg, .three-js path, .express-js svg, .express-js path {
     fill: var(--icon-color);
   }
 
@@ -56,10 +56,6 @@ div#root.dark {
       filter: grayscale(100%) brightness(1.5);
     }
 
-    &.vercel svg, &.vercel path {
-      filter: grayscale(100%) brightness(2);
-    }
-
     &:hover {
       svg, path {
         filter: grayscale(0%) brightness(1);
@@ -70,13 +66,13 @@ div#root.dark {
       &.javascript { background-color: #E8D44D1A; }
       &.typescript { background-color: #2F74C01A; }
       &.jquery { background-color: #1163A41A; }
+      &.gsap { background-color: #55F1641A; }
       &.three-js { background-color: #0000001A; }
       &.mongodb { background-color: #01EC641A; }
       &.express-js { background-color: #0000001A; }
       &.node-js { background-color: #66B8481A; }
       &.git { background-color: #DE4C361A; }
       &.vite { background-color: #7392FF1A; }
-      &.vercel { background-color: #0000001A; }
       &.tailwind-css { background-color: #38BDF81A; }
       &.sass { background-color: #CF649A1A; }
       &.vscode { background-color: #1F9CF01A; }
@@ -96,7 +92,7 @@ div#root.dark {
 
     & {
       svg, path {
-        filter: grayscale(0%) brightness(1);
+        filter: grayscale(0%) brightness(1) !important;
       }
       &.react { background-color: #00D8FF1A; }
       &.rails { background-color: #C600001A; }
@@ -104,13 +100,13 @@ div#root.dark {
       &.javascript { background-color: #E8D44D1A; }
       &.typescript { background-color: #2F74C01A; }
       &.jquery { background-color: #1163A41A; }
+      &.gsap { background-color: #55F1641A; }
       &.three-js { background-color: #0000001A; }
       &.mongodb { background-color: #01EC641A; }
       &.express-js { background-color: #0000001A; }
       &.node-js { background-color: #66B8481A; }
       &.git { background-color: #DE4C361A; }
       &.vite { background-color: #7392FF1A; }
-      &.vercel { background-color: #0000001A; }
       &.tailwind-css { background-color: #38BDF81A; }
       &.sass { background-color: #CF649A1A; }
       &.vscode { background-color: #1F9CF01A; }
@@ -118,6 +114,14 @@ div#root.dark {
       &.notion { background-color: #0000001A; }
       &.figma { background-color: #0000001A; }
       &.adobe { background-color: #DB262D1A; }
+    }
+  }
+
+  div#root.dark {
+    .technologies-item {
+      &.three-js, &.express-js, &.vercel, &.notion, &.figma { 
+        background-color: #FFFFFF1A;
+      }
     }
   }
 }

@@ -7,7 +7,7 @@ const Intro = () => {
   return (
     <section className='intro'>
       <h1>{t('intro.title')}</h1>
-      <h3>{t('intro.subtitle')}</h3>
+      <h2>{t('intro.subtitle')}</h2>
     </section>
   );
 };

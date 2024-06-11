@@ -69,6 +69,14 @@
       gap: var(--spacing-xs);
     }
 
+    title {
+      font-family: Inter Tight, sans-serif;
+      margin: 0;
+      font-weight: 600;
+      font-size: var(--font-size-md);
+      color: var(--details-color);
+    }
+
     p {
       font-size: var(--font-size-sm);
       text-align: justify;

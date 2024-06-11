@@ -5,8 +5,8 @@ section.intro {
   padding: var(--spacing-md) 0;
   gap: var(--spacing-sm);
 
-  h3 {
-    font-family: 'GilmerBold', 'Coolvetica', sans-serif;
+  h2 {
+    font-size: var(--font-size-lg);
   }
 }
 
@@ -14,7 +14,7 @@ section.intro {
   section.intro {
     gap: var(--spacing-md);
 
-    h3 {
+    h2 {
       font-size: var(--font-size-md);
     }
   }

@@ -1,11 +1,34 @@
 export default {
   translations: {
+    app: 'Yaraslau Maksimchyk - Desarrollador Frontend',
+    accessibility: {
+      toggle_theme: 'Alternar tema',
+      source_code: 'Código fuente',
+    },
     intro: {
       title: 'Yaraslau es un desarrollador frontend con más de 2 años de experiencia y una pasión por el diseño web y las interfaces.',
       subtitle: 'Nacido en Grodno, residente en Oporto. Creativo a partir del cine, los juegos y la familia.'
     },
     projects: {
       title: 'Proyectos',
+      circuit_rush: {
+        description: 'Un juego de carreras minimalista lleno de adrenalina.',
+      },
+      globus: {
+        description: 'Un globo único para explorar datos globales.',
+      },
+      expns: {
+        description: 'Gestión financiera, simplificada.',
+      },
+      codio: {
+        description: 'Un sitio web de agencia de diseño web.',
+      },
+      rorushi: {
+        description: 'Solo un sitio web de restaurante de sushi.',
+      },
+      movera: {
+        description: 'Renovación de UX/UI móvil.',
+      }
     },
     experience: {
       title: 'Experiencia',
@@ -36,6 +59,9 @@ export default {
         period: '2019 - 2022',
         description: 'Desarrolló experiencia en programación, prototipado y diseño web. Aplicó habilidades en el desarrollo de productos para crear aplicaciones web atractivas y contenido multimedia.'
       }
+    },
+    technologies: {
+      title: 'Tecnologías',
     },
     translate: {
       current: 'Español (ES)',

@@ -25,7 +25,7 @@ function App() {
   };
 
   useEffect(() => {
-    gsap.fromTo('.opacity-box', { opacity: 2}, { opacity: 0, duration: 1 });
+    gsap.fromTo('.opacity-box', { opacity: 2}, { opacity: 0, duration: 0.3 });
   }, [i18n.language, theme]);
 
   return (
@@ -33,7 +33,9 @@ function App() {
       <HelmetProvider>
         <Helmet>
           <html lang={i18n.language.split('-')[0]} data-color-scheme={theme}></html>
+          <link rel='icon' type='image/svg+xml' href={theme == 'light' ? '/favicon-light.svg' : '/favicon-dark.svg'} />
           <meta name='theme-color' content={theme === 'light' ? '#ffffff' : '#121212'} />
+          <title>{t('app')}</title>
         </Helmet>
       </HelmetProvider>
       <div className='opacity-box'></div>

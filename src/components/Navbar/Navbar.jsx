@@ -1,9 +1,11 @@
 import './Navbar.scss';
 import React, { useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
+import { useTranslation } from 'react-i18next';
 import Icon from '../icons/Icon';
 
 const Navbar = ({toggleTheme, theme }) => {
+  const { t } = useTranslation();
 
   useEffect(() => {
     const rootElement = document.getElementById('root');
@@ -28,7 +30,7 @@ const Navbar = ({toggleTheme, theme }) => {
           <li><a href='mailto:iaruso.me@gmail.com' title='Email'><Icon name='Email'/></a></li>
           <li><a href='https://www.linkedin.com/in/iaruso/' title='LinkedIn'><Icon name='LinkedIn'/></a></li>
           <li><a href='https://github.com/iaruso' title='Github'><Icon name='Github'/></a></li>
-          <li><button onClick={toggleTheme}><Icon name={theme == 'dark' ? 'Dark' : 'Light'}/></button></li>
+          <li><button onClick={toggleTheme} aria-label={t('accessibility.toggle_theme')}><Icon name={theme == 'dark' ? 'Dark' : 'Light'}/></button></li>
         </ul>
       </nav>
     </header>
