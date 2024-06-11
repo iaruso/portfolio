@@ -21,13 +21,23 @@ section.projects {
       border: var(--border-width-sm) solid var(--border-color);
       padding: var(--spacing-md);
       position: relative;
+      overflow: hidden;
+
+      &:hover {
+        .project-item-bg {
+          opacity: 1;
+        }
+      }
 
       .project-item-bg {
         position: absolute;
         inset: -1px;
+        pointer-events: none;
       }
 
       .project-item-header {
+        position: relative;
+        z-index: 2;
         display: flex;
         align-items: center;
         justify-content: start;
@@ -84,6 +94,8 @@ section.projects {
         }
       }
       .project-item-tech {
+        position: relative;
+        z-index: 2;
         display: flex;
         gap: var(--spacing-xs);
         flex-wrap: wrap;

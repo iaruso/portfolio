@@ -28,8 +28,8 @@ const Navbar = ({toggleTheme, theme }) => {
         </ScrollLink>
         <ul>
           <li><a href='mailto:iaruso.me@gmail.com' title='Email'><Icon name='Email'/></a></li>
-          <li><a href='https://www.linkedin.com/in/iaruso/' title='LinkedIn'><Icon name='LinkedIn'/></a></li>
-          <li><a href='https://github.com/iaruso' title='Github'><Icon name='Github'/></a></li>
+          <li><a href='https://www.linkedin.com/in/iaruso/' title='LinkedIn' target='_blank'><Icon name='LinkedIn'/></a></li>
+          <li><a href='https://github.com/iaruso' title='Github' target='_blank'><Icon name='Github'/></a></li>
           <li><button onClick={toggleTheme} aria-label={t('accessibility.toggle_theme')}><Icon name={theme == 'dark' ? 'Dark' : 'Light'}/></button></li>
         </ul>
       </nav>
