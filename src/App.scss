@@ -84,6 +84,9 @@ div#root.light {
   --button-hover-bg-color: var(--light-100);
   --button-active-bg-color: var(--light-200);
 
+  --selection-color: var(--text-color);
+  --selection-bg-color: #CCCCCC80;
+
   --scroll-thumb-color: var(--light-400);
 }
 
@@ -105,6 +108,9 @@ div#root.dark {
   --box-bg-color: var(--dark-200);
   --button-hover-bg-color: var(--dark-200);
   --button-active-bg-color: var(--dark-300);
+
+  --selection-color: var(--text-color);
+  --selection-bg-color: #80808080;
 
   --scroll-thumb-color: var(--dark-400);
 }
@@ -228,6 +234,11 @@ time {
 
 [data-color-scheme="light"] {
   color-scheme: light;
+}
+
+::-moz-selection, ::selection {
+  color: var(--selection-color);
+  background: var(--selection-bg-color);
 }
 
 @media (prefers-reduced-motion: reduce) {
