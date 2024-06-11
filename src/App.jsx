@@ -11,7 +11,7 @@ import Footer from './components/Footer.jsx/Footer'
 
 function App() {
   const { t, i18n } = useTranslation();
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+  const [theme, setTheme] = useState(localStorage.getItem('theme'));
 
   useEffect(() => {
     if (!theme) {
