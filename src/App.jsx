@@ -16,7 +16,9 @@ function App() {
     if (savedTheme) {
       return savedTheme;
     }
-    return window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light';
+    const testTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light';
+    console.log(testTheme);
+    return testTheme;
   });
 
   const toggleTheme = () => {
@@ -50,7 +52,7 @@ function App() {
       <main className='app'>
         <Intro />
         <div className='app-content'>
-          <Projects />
+          <Projects theme={theme}/>
           <Info />
         </div>
       </main>
