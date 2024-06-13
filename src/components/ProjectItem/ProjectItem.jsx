@@ -50,7 +50,7 @@ const ProjectItem = ({ theme, imageUrlDark, imageUrlLight, projectName, projectL
           {projectName}<Icon name='Link' />
         </a>
         {projectName === 'Circuit Rush' && (
-          <a className='award-link' href='https://threejs-journey.com/selection/4' target='_blank' rel='noopener noreferrer' title={t('projects.circuit_rush.award')}>
+          <a className='award-link' href='https://threejs-journey.com/selection/circuit-rush' target='_blank' rel='noopener noreferrer' title={t('projects.circuit_rush.award')}>
             <Icon name='Award' />
           </a>
         )}
