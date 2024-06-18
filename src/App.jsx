@@ -2,6 +2,7 @@ import './App.scss'
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
+import { Analytics } from "@vercel/analytics/react"
 import gsap from 'gsap'
 import Navbar from './components/Navbar/Navbar'
 import Intro from './components/Intro/Intro'
@@ -57,6 +58,7 @@ function App() {
         </div>
       </main>
       <Footer handleLanguageChange={handleLanguageChange} />
+      <Analytics />
     </>
   )
 }
