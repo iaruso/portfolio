@@ -11,6 +11,15 @@ const Experience = () => {
       <div className='exp-edu-container'>
         <div className='divider'></div>
         <div className='exp-edu-item'>
+          <a href='https://www.ceiia.com/' target='_blank'>{t('experience.data_3.company')}<Icon name='Link' /></a>
+          <div className='block'></div>
+          <div className='exp-edu-item-header'>
+            <p className='title'>{t('experience.data_3.position')}</p>
+            <time>{t('experience.data_3.period')}</time>
+          </div>
+          <p className='description'>{t('experience.data_3.description')}</p>
+        </div>
+        <div className='exp-edu-item'>
           <a href='https://strongstep.pt/en/' target='_blank'>{t('experience.data_2.company')}<Icon name='Link' /></a>
           <div className='block'></div>
           <div className='exp-edu-item-header'>

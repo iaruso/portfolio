@@ -8,7 +8,7 @@ export default {
     },
     intro: {
       title: 'Yaraslau is a frontend developer with 2+ years of experience and a passion for web design and interfaces.',
-      subtitle: 'Grodno-born, Porto-based. Creative from movies, games and family.'
+      subtitle: 'Grodno-born, Porto-based. Inspired by stories, games, and meaningful connections.'
     },
     projects: {
       title: 'Projects',
@@ -34,11 +34,17 @@ export default {
     },
     experience: {
       title: 'Experience',
+      data_3: {
+        company: 'CEiiA',
+        position: 'Frontend Software Engineer',
+        period: '2024 - Present',
+        description: "Developing accessible, high-performance user interfaces for mobility management systems integrated with the AYR platform. Collaborating with cross-functional teams to optimize data handling, improve server-side performance, and ensure inclusive design for smart city applications."
+      },
       data_2: {
         company: 'Strongstep',
         position: 'Frontend Developer',
-        period: '2022 - Present',
-        description: "Leading development of a unified design system (Ruby on Rails & Figma) for a Project Management platform. Improved platform's visual appeal, user experience, and consistency (CSS)."
+        period: '2022 - 2024',
+        description: "Led the development of a unified design system for a project management platform, improving its visual appeal, user experience, and consistency."
       },
       data_1: {
         company: 'Strongstep',
@@ -53,7 +59,7 @@ export default {
         institution: 'University of Porto',
         degree: 'Master in Multimedia',
         period: '2023 - Present',
-        description: 'Exploring diverse fields and focusing on advancing UX/UI design skills to drive innovation in digital experiences.'
+        description: 'Working on a dissertation focused on accessibility and interface representation in data, using Three.js to visualize oil spills on a globe as part of the European-funded ILIAD project.'
       },
       data_1: {
         institution: 'School of Media Arts and Design',
@@ -70,8 +76,7 @@ export default {
       options: {
         english: 'English (US)',
         portuguese: 'Portuguese (PT)',
-        russian: 'Russian (RU)',
-        spanish: 'Spanish (ES)'
+        russian: 'Russian (RU)'
       }
     }
   }

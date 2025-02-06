@@ -8,7 +8,7 @@ export default {
     },
     intro: {
       title: 'Yaraslau é um desenvolvedor frontend com mais de 2 anos de experiência e uma paixão por design e interfaces web.',
-      subtitle: 'Natural de Grodno, residente no Porto. Criativo através de filmes, jogos e família.'
+      subtitle: 'Natural de Grodno, baseado no Porto. Inspirado por histórias, jogos e conexões significativas.'
     },
     projects: {
       title: 'Projetos',
@@ -34,11 +34,17 @@ export default {
     },
     experience: {
       title: 'Experiência',
+      data_3: {
+        company: 'CEiiA',
+        position: 'Engenheiro de Software Frontend',
+        period: '2024 - Presente',
+        description: "Desenvolvimento de interfaces de utilizador acessíveis e de alto desempenho para sistemas de gestão de mobilidade integrados com a plataforma AYR. Colaboração com equipas multifuncionais para otimizar o tratamento de dados, melhorar o desempenho do lado do servidor e garantir um design inclusivo para aplicações de cidades inteligentes."
+      },
       data_2: {
         company: 'Strongstep',
         position: 'Desenvolvedor Frontend',
-        period: '2022 - Presente',
-        description: "Liderando o desenvolvimento de um sistema de design unificado (Ruby on Rails e Figma) para uma plataforma de gestão de projetos. Melhoria do apelo visual da plataforma, da experiência do utilizador e da consistência (CSS)."
+        period: '2022 - 2024',
+        description: "Liderança no desenvolvimento de um sistema de design unificado para uma plataforma de gestão de projetos, melhorando o apelo visual, a experiência do utilizador e a consistência."
       },
       data_1: {
         company: 'Strongstep',
@@ -53,7 +59,7 @@ export default {
         institution: 'Universidade do Porto',
         degree: 'Mestrado em Multimédia',
         period: '2023 - Presente',
-        description: 'Exploração em diversos campos e foco no avanço das habilidades de design UX/UI para impulsionar a inovação nas experiências digitais.'
+        description: 'Dissertação focada na acessibilidade e na representação de dados em interfaces, utilizando Three.js para visualizar manchas de óleo num globo, no âmbito do projeto europeu ILIAD.'
       },
       data_1: {
         institution: 'Escola de Media Artes e Design',
@@ -70,8 +76,7 @@ export default {
       options: {
         english: 'Inglês (US)',
         portuguese: 'Português (PT)',
-        russian: 'Russo (RU)',
-        spanish: 'Espanhol (ES)'
+        russian: 'Russo (RU)'
       }
     }
   }

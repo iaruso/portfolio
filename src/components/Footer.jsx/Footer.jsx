@@ -10,8 +10,7 @@ const Footer = ({ handleLanguageChange }) => {
   const languages = [
     { code: 'en', label: 'translate.options.english' },
     { code: 'pt', label: 'translate.options.portuguese' },
-    { code: 'ru', label: 'translate.options.russian' },
-    { code: 'es', label: 'translate.options.spanish' },
+    { code: 'ru', label: 'translate.options.russian' }
   ];
 
   const toggleDropdown = () => {
